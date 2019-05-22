@@ -1,5 +1,5 @@
 # wificash
-feature 功能分支发发呆发
+feature sdk 功能
 > wificash
 
 ## Build Setup
