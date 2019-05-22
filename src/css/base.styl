@@ -1,0 +1,33 @@
+@import "variable.styl"
+
+body, html
+  width 100%
+  line-height: 1
+  /*height 100%*/
+  //font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback'
+  font-family:'ArialMT'
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+  background: $color-background
+  background-color rgb(241,240,240)
+  background-color rgba(255,255,255,1)
+  color #333
+  font-size 14px;
+@media (-webkit-max-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)
+  .border-1px
+    &::after
+      -webkit-transform: scaleY(.5);
+      transform: scaleY(.5);
+  .borderAll-1px
+    &::after
+      -webkit-transform: scale(.5);
+      transform: scale(.5);
+@media (-webkit-max-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+  .border-1px
+    &::after
+      -webkit-transform: scaleY(.333333);
+      transform: scaleY(.333333);
+  .borderAll-1px
+    &::after
+      -webkit-transform: scale(.333333);
+      transform: scale(.333333);
